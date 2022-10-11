@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Basic Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+        <div id="preloader">
+            <div class="preload-gif">
+                <img src="./preloader.gif" alt="Preloader image">
+            </div>
+        </div>
+    
+    <div id="particles-js"></div>
+
+    <div id="modal-container">
+        <div id="modal-content">
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="main">
+             <div class="img-left-container"></div>
+
+             <div class="login-right-container">
+                <h1 class="title">
+                    Welcome Back 😁 
+                </h1>
+                <div class="content">
+                    <p class="invalide"></p>
+                    <input type="email" class="email-input" id="user-email" placeholder="Enter your email adress">
+                    <div class="password-container">
+                        <input type="password" id="user-password" class="user-password" placeholder="Enter your password">
+                        <img src="" alt="" class="hide-password">
+                        <a href="#" class="forgot-password" id="forgot-password">Forgot password ?</a>
+                    </div>
+                    <br>
+                    <div class="remember-me-box">
+                        <div class="checkbox-container">
+                            <div class="input-wrap">
+                                <input id="input-7" class="rememberMe" type="checkbox" checked>
+                                <label for="input-7">Select</label>
+                              </div> 
+                        </div>
+                        <span> Remember me</span>
+                    </div>
+                    <button class="login-btn"> Login </button>
+                    <div>
+                        <span>New User? </span><a href="#" class="signup-btn">SignUp</a> 
+                    </div>
+    
+                    <div class="links">
+                        <span>OR Login with <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span>
+                        <div class="button-links">
+                            <button class="google-btn">
+                                <i class="fa fa-google"></i> 
+                                Google
+                            </button>
+                            <button class="facebook-btn">
+                                <i class="fa fa-facebook"></i> 
+                                Facebook
+                            </button>
+                            <button class="github-btn">
+                                <i class="fa fa-github"></i> 
+                                Github
+                            </button>
+                        </div>
+                </div>
+                </div>
+             </div>
+        </div>
+
+</div>
+    
+    <script src="./jquery.min.js"></script>
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
