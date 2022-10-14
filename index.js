@@ -3,7 +3,11 @@ const loginBtn = document.querySelector(".login-btn");
 const userPassword = document.querySelector(".user-password");
 const userEmail = document.querySelector(".email-input")
 const invalide = document.querySelector(".invalide")
+const invalid = document.querySelector(".invalid")
 const rmCheck = document.querySelector(".rememberMe")
+const modal = document.getElementById("modal-container");
+const modal_forget_btn = document.getElementById("signup-btn")
+
 
 const regEmail =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const regPassword = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
@@ -57,4 +61,15 @@ loginBtn.onclick = ()=>{
     else{
         invalide.innerHTML = "One or more fields are empty !!!"
     }
+}
+
+
+modal_forget_btn.onclick = function() {
+  modal.style.display = "flex";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
