@@ -14,9 +14,7 @@ const regPassword = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
 
 
 window.addEventListener('load', ()=>{
-    setTimeout(()=>{
         preloader.style.display = "none"
-    }, 2000)
 })
 
 if (localStorage.checkbox && localStorage.checkbox !== "") {
